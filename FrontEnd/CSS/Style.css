@@ -1,0 +1,128 @@
+/* Cores Base e Auxiliares */
+:root {
+    --magenta: #D627A5;
+    --dark-magenta: #C31E94;
+    --bg-nude: #EFD9D9;
+}
+
+.bg-nude { background-color: var(--bg-nude); }
+
+/* Cadastro e Login */
+.auth-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.auth-title {
+    font-size: 4rem;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.btn-dark {
+    width: 100%;
+    padding: 15px;
+    background-color: #2D2D2D;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+/* Dashboard Principal */
+.dashboard-body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+.sidebar {
+    width: 250px;
+    background-color: var(--magenta);
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin-bottom: 50px;
+}
+.side-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    display: block;
+}
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.top-nav {
+    background-color: var(--magenta);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+.top-nav a {
+    color: white;
+    text-decoration: none;
+}
+.promo-banner {
+    margin: 40px;
+    background: #eededc;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.promo-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.promo-info {
+    padding: 20px;
+}
+.promo-info h2 { margin: 0 0 10px 0; font-size: 2rem; }
+.promo-info .price { font-weight: bold; font-size: 1.2rem; margin: 0 0 5px 0;}
+
+/* Serviços e Profissionais */
+.p-50 { padding: 50px; }
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.service-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.service-item:hover { transform: scale(1.02); }
+.icon-placeholder {
+    font-size: 3rem;
+}
+.back-link {
+    display: block;
+    margin-top: 50px;
+    color: #333;
+    text-decoration: none;
+}
